@@ -1,0 +1,2 @@
+_id,ProductID,ProductName,Category,Price,Rating,ReviewCount,Stock,Discount,Brand,LaunchDate
+681ecfd996f1df235ad978f0,104,Running Shoes,Sports,49.99,4.3,500,200,0.2,Nike,2022-02-10
