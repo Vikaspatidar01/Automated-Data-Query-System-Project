@@ -29,7 +29,6 @@ This project is an offline, automated system for querying structured product dat
 
 1. **Install Dependencies**
 
-```bash
 pip install pymongo pandas transformers torch accelerate
 📍 Notes
 This tool works offline and doesn't require cloud-based LLMs.
@@ -38,14 +37,14 @@ It uses fallback model facebook/opt-125m if a heavier model cannot load.
 
 Make sure your CSV is properly formatted; bad data can cause processing issues.
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 Hugging Face Transformers & Facebook OPT models
 
 MongoDB Community
 
 Python open-source libraries
 
-👤 Author
+## 👤 Author
 Vikas Patidar
 
 Data Scientist (Certified by IOTA Academy Indore)
