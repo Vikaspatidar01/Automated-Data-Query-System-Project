@@ -1,0 +1,9 @@
+User Query: Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 'Sony'.
+Generated MongoDB Query: db.collection.find({"Rating": {"$lt": 4.5}, "ReviewCount": {"$gt": 200}, "Brand": {"$in": ["Nike", "Sony"]}})
+
+User Query: Which products in the Electronics category have a rating of 4.5 or higher and are in stock?
+Generated MongoDB Query: db.collection.find({"Category": "Electronics", "Rating": {"$gte": 4.5}, "Stock": {"$gt": 0}})
+
+User Query: List products launched after January 1, 2022, in the Home & Kitchen or Sports categories with a discount of 10% or more, sorted by price in descending order.
+Generated MongoDB Query: db.collection.find({"LaunchDate": {"$gt": ISODate("2022-01-01")}, "Category": {"$in": ["Home & Kitchen", "Sports"]}, "Discount": {"$gte": 0.1}}).sort({"Price": -1})
+
